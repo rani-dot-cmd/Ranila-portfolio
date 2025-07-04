@@ -242,3 +242,35 @@
     
   }
   
+    
+  .container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  /* .cards{
+    flex-direction: row;
+    display: grid;
+    margin-top: 40px;
+    
+  } */
+  .card{
+    background-color: white;
+    margin-left: 20px;
+    padding: 5px;
+    font-size: larger;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+
+  .cards-top{
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  .cards-bottom{
+    display: flex;
+    flex-direction: row;
+  }

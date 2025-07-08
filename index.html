@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <div>
+    <nav>
       <ul>
         <li id="logo">
           <img src="../templates/logo-1-150x150.png" alt="Logo" />
@@ -17,32 +17,23 @@
         <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li id="nav-button"><a href="">Hire me</a></li>
+        <li id="nav-button"><a href="#">Hire me</a></li>
       </ul>
       <div class="social-icons">
         <ul>
-          <a href="#">LinkedIn</a>
-        </ul>
-        <ul>
-          <a href="#">Instagram</a>
-        </ul>
-        <ul>
-          <a href="#">Basketball</a>
-        </ul>
-        <ul>
-          <a href="#">Behance</a>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Basketball</a></li>
+          <li><a href="#">Behance</a></li>
         </ul>
       </div>
-    </div>
+    </nav>
 
     <!-- Hero Section -->
-    <div style="display: flex; flex-direction: row">
+    <div style="display: flex; flex-direction: row; align-items: center">
       <div>
         <div class="header">
-          <h1>
-            I'm a Web <br /><span>Developer</span><br />
-            Ranila Liisone
-          </h1>
+          <h1>I'm a Web <br /><span>Developer</span><br />Ranila Liisone</h1>
         </div>
         <div class="text">
           <p>
@@ -51,7 +42,7 @@
           </p>
         </div>
         <div>
-          <a href="about" class="button">Learn more</a>
+          <a href="#about" class="button">Learn more</a>
         </div>
       </div>
       <div class="hero-image">
@@ -60,21 +51,19 @@
     </div>
 
     <!-- About Me Section -->
-    <div style="align-items: center; text-align: center">
+    <section style="text-align: center">
       <h2>About Me</h2>
       <p class="subtitle">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       </p>
       <div class="underline"></div>
-    </div>
+    </section>
 
-    <div class="about-content">
-      <div>
-        <div class="about-text">
-          <h3>Developing with a passion while Exploring the world</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-          <button class="contact">Contact Me</button>
-        </div>
+    <div class="about-content" style="display: flex; align-items: center">
+      <div class="about-text">
+        <h3>Developing with a passion while Exploring the world</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+        <button class="contact">Contact Me</button>
       </div>
       <div class="about-img">
         <img src="../templates/section-1-bg1.jpg" alt="About Image" />
@@ -82,17 +71,18 @@
     </div>
 
     <!-- Services Section -->
-    <div class="my-services">
-      <div>
-        <div style="align-items: center; text-align: center">
-          <h2>What Services I Provide</h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <div class="underline"></div>
-        </div>
+    <section class="my-services">
+      <div style="text-align: center">
+        <h2>What Services I Provide</h2>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <div class="underline"></div>
       </div>
-      <div class="services">
+      <div
+        class="services"
+        style="display: flex; justify-content: space-around"
+      >
         <div class="UX">
           <img src="ux.png" alt="UI/UX Design" />
           <h3>UI/UX Design</h3>
@@ -109,23 +99,21 @@
           <p>Lorem ipsum dolor sit amet, consectetur...</p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Work Experience Section -->
-    <div class="container">
-      <div>
-        <div style="align-items: center; text-align: center">
-          <h2>Work Experience</h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <div class="underline"></div>
-        </div>
+    <section class="container">
+      <div style="text-align: center">
+        <h2>Work Experience</h2>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <div class="underline"></div>
       </div>
-    </div>
+    </section>
 
     <div class="cards">
-      <div class="cards-top">
+      <div class="cards-top" style="display: flex">
         <div class="card">
           <h3 class="hh">UX/UI Designer</h3>
           <div class="year">2015/2018</div>
@@ -139,7 +127,7 @@
           <div class="progress" style="width: 40%"></div>
         </div>
       </div>
-      <div class="cards-bottom">
+      <div class="cards-bottom" style="display: flex">
         <div class="card">
           <h3>Graphic Designer</h3>
           <div class="year">2015/2018</div>
@@ -156,79 +144,85 @@
     </div>
 
     <!-- Portfolio Section -->
-    <div class="my-portfolio">
-      <div>
-        <div style="align-items: center; text-align: center">
-          <h2>My Portfolio</h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-          <div class="underline"></div>
-        </div>
+    <section class="my-portfolio">
+      <div style="text-align: center">
+        <h2>My Portfolio</h2>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <div class="underline"></div>
       </div>
-    </div>
-
-    <div class="Portfolio img">
-      <img
-        class="portfolio3"
-        src="portfolio-3.png"
-        width="330"
-        height="250"
-        alt="Portfolio Item 1"
-      />
-      <img
-        class="portfolio-4"
-        src="portfolio-4.png"
-        width="330"
-        height="250"
-        alt="Portfolio Item 2"
-      />
-      <img
-        class="portfolio-6-1"
-        src="portfolio-6-1.png"
-        width="330"
-        height="250"
-        alt="Portfolio Item 3"
-      />
-    </div>
+      <div class="Portfolio img" style="display: flex; justify-content: center">
+        <img
+          class="portfolio3"
+          src="portfolio-3.png"
+          width="330"
+          height="250"
+          alt="Portfolio 3"
+        />
+        <img
+          class="portfolio-4"
+          src="portfolio-4.png"
+          width="330"
+          height="250"
+          alt="Portfolio 4"
+        />
+        <img
+          class="portfolio-6-1"
+          src="portfolio-6-1.png"
+          width="330"
+          height="250"
+          alt="Portfolio 6"
+        />
+      </div>
+    </section>
 
     <!-- Client Testimonials Section -->
-    <div class="my-clients">
-      <div>
-        <div style="align-items: center; text-align: center">
-          <h2>What My Clients Say</h2>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    <section class="my-clients">
+      <div style="text-align: center">
+        <h2>What My Clients Say</h2>
+        <p class="subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <div class="underline"></div>
+      </div>
+      <div class="clients" style="display: flex; justify-content: space-around">
+        <div class="client">
+          <img src="male-1.jpg" width="100" height="50" alt="Client 1" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing. Itaque
+            inventore ipsam, aperiam hic sed dignissimos corrupti nece
+            asperiores est esse reiciendis tempora.
           </p>
           <div class="underline"></div>
+          <p class="subtitle">John Doe</p>
+        </div>
+        <div class="client">
+          <img
+            src="female-3-300x300.jpg"
+            width="100"
+            height="50"
+            alt="Client 2"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing. Itaque
+            inventore ipsam, aperiam hic sed dignissimos corrupti nece
+            asperiores est esse reiciendis tempora.
+          </p>
+          <div class="underline"></div>
+          <p class="subtitle">Jenna Smith</p>
+        </div>
+        <div class="client">
+          <img src="male-3.jpg" width="100" height="50" alt="Client 3" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing. Itaque
+            inventore ipsam, aperiam hic sed dignissimos corrupti nece
+            asperiores est esse reiciendis tempora.
+          </p>
+          <div class="underline"></div>
+          <p class="subtitle">Samuel Stevens</p>
         </div>
       </div>
-    </div>
-
-    <div class="clients">
-      <div class="client">
-        <img src="male-1.jpg" width="100" height="50" alt="Client 1" />
-        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-        <div class="underline"></div>
-        <p class="subtitle">John Doe</p>
-      </div>
-      <div class="client">
-        <img
-          src="female-3-300x300.jpg"
-          width="100"
-          height="50"
-          alt="Client 2"
-        />
-        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-        <div class="underline"></div>
-        <p class="subtitle">Jenna Smith</p>
-      </div>
-      <div class="client">
-        <img src="male-3.jpg" width="100" height="50" alt="Client 3" />
-        <p>Lorem ipsum dolor sit amet, consectetur...</p>
-        <div class="underline"></div>
-        <p class="subtitle">Samuel Stevens</p>
-      </div>
-    </div>
+    </section>
   </body>
 </html>

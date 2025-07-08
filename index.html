@@ -1,227 +1,234 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>personal Portfolio</title>
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div>
+      <ul>
+        <li id="logo">
+          <img src="../templates/logo-1-150x150.png" alt="Logo" />
+        </li>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li id="nav-button"><a href="">Hire me</a></li>
+      </ul>
+      <div class="social-icons">
+        <ul>
+          <a href="#">LinkedIn</a>
+        </ul>
+        <ul>
+          <a href="#">Instagram</a>
+        </ul>
+        <ul>
+          <a href="#">Basketball</a>
+        </ul>
+        <ul>
+          <a href="#">Behance</a>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div style="display: flex; flex-direction: row">
+      <div>
+        <div class="header">
+          <h1>
+            I'm a Web <br /><span>Developer</span><br />
+            Ranila Liisone
+          </h1>
+        </div>
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quo,
+            explicabo libero...
+          </p>
+        </div>
         <div>
-            <ul>
-                <li id="logo"><img src="../templates/logo-1-150x150.png" alt=""></li>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li id="nav-button"><a href="">Hire me</a></li>
-            </ul>
-        <div class="social-icons">
-            <ul><a href="#">linkedin-in</a></ul>
-            <ul><a href="#"> instagram</a></ul>
-            <ul><a href="#">basketball-ball</a></ul>   
-            <ul><a href="#">behance</a></ul>
-        </div>     
-            <div style="display: flex; flex-direction: row;">
-                <div >
-                    <div class="header">
-                        <h1>I'm web <br><span>Developer</span><br>Ranila Liisone</h1>
-                    </div>
-                    <div class="text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo, explicabo libero, fuga veritatis hic ex nostrum architecto cum eveniet beatae. Minima necessitatibus quisquam repellat voluptate quod tenetur facilis doloremque.</p>
-                    </div>
-                    <div>
-                        <a href="about" class="button">Learn more</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="rani.png"alt="">
-                </div>
-            </div>
-            <div style="align-items: center; text-align: center;">
-                <h2>About Me</h2>
-                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <div class="underline"></div>
-            </div>
+          <a href="about" class="button">Learn more</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="rani.png" alt="Hero Image" />
+      </div>
+    </div>
 
+    <!-- About Me Section -->
+    <div style="align-items: center; text-align: center">
+      <h2>About Me</h2>
+      <p class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="underline"></div>
+    </div>
 
+    <div class="about-content">
+      <div>
+        <div class="about-text">
+          <h3>Developing with a passion while Exploring the world</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <button class="contact">Contact Me</button>
+        </div>
+      </div>
+      <div class="about-img">
+        <img src="../templates/section-1-bg1.jpg" alt="About Image" />
+      </div>
+    </div>
 
-            <div class="about-content">
-                <div> 
-                    <div class="about-text">
-                        <h3>Developing with a passion while Exploring the world,</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugit alias esse, provident possimus rem unde sunt.</p> 
-                        <p>Tempora adipisci accusamus dolorum, aspernatur fugit officia nobis natus dolore ullam dolor non.</p>
-                        <button class="contact"> Contact Me</button>
-                    </div>
-                </div>
-                <div class="about-img" >
-                    <img src="../templates/section-1-bg1.jpg" alt="">
-                </div>
-            </div>
+    <!-- Services Section -->
+    <div class="my-services">
+      <div>
+        <div style="align-items: center; text-align: center">
+          <h2>What Services I Provide</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <div class="underline"></div>
+        </div>
+      </div>
+      <div class="services">
+        <div class="UX">
+          <img src="ux.png" alt="UI/UX Design" />
+          <h3>UI/UX Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur...</p>
+        </div>
+        <div class="digital">
+          <img src="digital.png" alt="Digital Marketing" />
+          <h3>Digital Marketing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur...</p>
+        </div>
+        <div class="web">
+          <img src="web.png" alt="Web Development" />
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur...</p>
+        </div>
+      </div>
+    </div>
 
-            
+    <!-- Work Experience Section -->
+    <div class="container">
+      <div>
+        <div style="align-items: center; text-align: center">
+          <h2>Work Experience</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </div>
 
-            <div class="my-services">
-                <div>
-                    <div style="align-items: center; text-align: center;">
-                        <h2>What services am providing</h2>
-                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                        <div class="underline"></div>
-                    </div>
+    <div class="cards">
+      <div class="cards-top">
+        <div class="card">
+          <h3 class="hh">UX/UI Designer</h3>
+          <div class="year">2015/2018</div>
+          <p>Lorem ipsum dolor sit amet, consectetur...</p>
+          <div class="progress" style="width: 60%"></div>
+        </div>
+        <div class="card">
+          <h3>Web Developer</h3>
+          <div class="year">2015/2018</div>
+          <p>Lorem ipsum dolor sit amet, consectetur...</p>
+          <div class="progress" style="width: 40%"></div>
+        </div>
+      </div>
+      <div class="cards-bottom">
+        <div class="card">
+          <h3>Graphic Designer</h3>
+          <div class="year">2015/2018</div>
+          <p>Lorem ipsum dolor sit amet, consectetur...</p>
+          <div class="progress" style="width: 75%"></div>
+        </div>
+        <div class="card">
+          <h3>Marketing</h3>
+          <div class="year">2015/2018</div>
+          <p>Lorem ipsum dolor sit amet, consectetur...</p>
+          <div class="progress" style="width: 80%"></div>
+        </div>
+      </div>
+    </div>
 
-                </div>
-                <div class="services">
-                    <div class="UX">
-                        <img src="ux.png" alt="">
-                        <h3>UI/UX Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, 
-                            adipisicing . Itaque inventore ipsam, 
-                            aperiam hic sed dignissimos corrupti nece
-                            asperiores est esse reiciendis tempora 
-                            ugit autem doloremque quae ullam blanditi.</p>   
-    
-                    </div>
-                    <div class="digital">
-                        <img src="digital.png" alt="">
-                        <h3>Digital marketing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, 
-                            adipisicing . Itaque inventore ipsam, 
-                            aperiam hic sed dignissimos corrupti nece
-                            asperiores est esse reiciendis tempora 
-                            ugit autem doloremque quae ullam blanditi.</p>
-                            <p> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></p>
-                    </div>
-                    <div class="web">
-                        <img src="web.png" alt="">
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, 
-                            adipisicing . Itaque inventore ipsam, 
-                            aperiam hic sed dignissimos corrupti nece
-                            asperiores est esse reiciendis tempora 
-                            ugit autem doloremque quae ullam blanditi.</p>
-                    </div>
-                    
-                </div>
-                
-            </div>
-        
-            <div style="margin-top: 30px;" class="image">
-            <div>
-                <br><h1>Working process</h1>
-                <br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            </div>
-            
+    <!-- Portfolio Section -->
+    <div class="my-portfolio">
+      <div>
+        <div style="align-items: center; text-align: center">
+          <h2>My Portfolio</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </div>
 
-            <div class="container">
-                <div>
-                    <div style="align-items: center; text-align: center;">
-                        <h2>Work Experience</h2>
-                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                        <div class="underline"></div>
-                    </div>
+    <div class="Portfolio img">
+      <img
+        class="portfolio3"
+        src="portfolio-3.png"
+        width="330"
+        height="250"
+        alt="Portfolio Item 1"
+      />
+      <img
+        class="portfolio-4"
+        src="portfolio-4.png"
+        width="330"
+        height="250"
+        alt="Portfolio Item 2"
+      />
+      <img
+        class="portfolio-6-1"
+        src="portfolio-6-1.png"
+        width="330"
+        height="250"
+        alt="Portfolio Item 3"
+      />
+    </div>
 
-                </div>
-            </div>   
-            <div class="cards">
-                <div class="cards-top">
-                    <div class="card">
-                        <h3 class="hh">UX/UI Designer</h3>
-                        <div class="year"> 2015/2018</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus consectetur quaerat ex illum cum, illo qui consequuntur dolores numquam, nulla quae eaque saepe ad reiciendis architecto fugit dolorem sequi!</p>
-                            <div class="progress" style="width: 60%;"></div>
-                    </div>
-                    <div class="card">
-                        <h3>Web Developer</h3>
-                        <div class="year"> 2015/2018</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus consectetur quaerat ex illum cum, illo qui consequuntur dolores numquam, nulla quae eaque saepe ad reiciendis architecto fugit dolorem sequi!</p>
-                            <div class="progress" style="width: 40%;"></div>
-                    </div>
-                </div>
-                <div class="cards-bottom">
-                    <div class="card">
-                        <h3>Graphic Designer</h3>
-                        <div class="year"> 2015/2018</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus consectetur quaerat ex illum cum, illo qui consequuntur dolores numquam, nulla quae eaque saepe ad reiciendis architecto fugit dolorem sequi!</p>
-                            <div class="progress" style="width: 75%;"></div>
-                    </div>
-                    <div class="card">
-                        <h3>Graphic Designer</h3>
-                        <div class="year"> 2015/2018</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus consectetur quaerat ex illum cum, illo qui consequuntur dolores numquam, nulla quae eaque saepe ad reiciendis architecto fugit dolorem sequi!</p>
-                            <div class="progress" style="width: 75%;"></div>
-                    </div>
-                    <div class="card">
-                        <h3>Marketing</h3>
-                        <div class="year"> 2015/2018</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus consectetur quaerat ex illum cum, illo qui consequuntur dolores numquam, nulla quae eaque saepe ad reiciendis architecto fugit dolorem sequi!</p>
-                            <div class="progress" style="width: 80%;"></div>
-                    </div>
-            </div>
+    <!-- Client Testimonials Section -->
+    <div class="my-clients">
+      <div>
+        <div style="align-items: center; text-align: center">
+          <h2>What My Clients Say</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <div class="underline"></div>
+        </div>
+      </div>
+    </div>
 
-            <div class="my-portfolio">
-                <div>
-                    <div style="align-items: center; text-align: center;">
-                        <h2>My Portfolio</h2>
-                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                        <div class="underline"></div>
-                    </div>
-                </div>  
-            </div>
-            
-
-                <div class="Portfolio img">
-                    <img class="portfolio3" src="portfolio-3.png" width="330" height="250" alt="">
-                    <img class="portfolio-4" src="portfolio-4.png" width="330" height="250" alt="">
-                    <img class="portfolio-6-1" src="portfolio-6-1.png" width="330" height="250" alt="">
-                </div>
-            
-            <div class="my-clients">
-                <div>
-                    <div style="align-items: center; text-align: center;">
-                        <h2>What my clients Says</h2>
-                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                        <div class="underline"></div>
-                    </div>
-
-                </div>
-            </div>    
-                <div class="clients">
-                    <div class="client">
-                        <img src="male-1.jpg" width="100px" height="50px" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur, 
-                            adipisicing . Itaque inventore ipsam, 
-                            aperiam hic sed dignissimos corrupti nece
-                            asperiores est esse reiciendis tempora 
-                            ugit autem doloremque quae ullam blanditi.</p>  
-                            <div class="underline"></div> 
-                            <p class="subtitle"> John Doe</p>
-
-                    </div>
-                    <div class="client">
-                        <img src="female-3-300x300.jpg" width="100" height="50px"alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur, 
-                                adipisicing . Itaque inventore ipsam, 
-                                aperiam hic sed dignissimos corrupti nece
-                                asperiores est esse reiciendis tempora 
-                                ugit autem doloremque quae ullam blanditi.</p>
-                                <div class="underline"></div>
-                                <p class="subtitle"> Jenna Smith</p>
-                                
-                            </div>
-                        <div class="client  `">
-                            <img src="male-3.jpg" width="100px" height="50px" alt="">
-                                <p>Lorem ipsum dolor sit amet consectetur, 
-                                    adipisicing . Itaque inventore ipsam, 
-                                    aperiam hic sed dignissimos corrupti nece
-                                    asperiores est esse reiciendis tempora 
-                                    ugit autem doloremque quae ullam blanditi.</p>
-                                    <div class="underline"></div>
-                                    <p class="subtitle"> Samuel Stevens</p>
-                        </div>
-                    </div>
-            </div>
-    </body>
-    </html>
+    <div class="clients">
+      <div class="client">
+        <img src="male-1.jpg" width="100" height="50" alt="Client 1" />
+        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+        <div class="underline"></div>
+        <p class="subtitle">John Doe</p>
+      </div>
+      <div class="client">
+        <img
+          src="female-3-300x300.jpg"
+          width="100"
+          height="50"
+          alt="Client 2"
+        />
+        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+        <div class="underline"></div>
+        <p class="subtitle">Jenna Smith</p>
+      </div>
+      <div class="client">
+        <img src="male-3.jpg" width="100" height="50" alt="Client 3" />
+        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+        <div class="underline"></div>
+        <p class="subtitle">Samuel Stevens</p>
+      </div>
+    </div>
+  </body>
+</html>

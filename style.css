@@ -1,77 +1,61 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
   }
   body{
-      font-family: 'Times New Roman', Times, serif;
-      line-height: 1.6;
-      background-color: #e5dfdf;
-      color: rgb(8, 8, 36);
+      background-color: #fbf3f2;
+  }
+  .header{
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
   }
   ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
     }
     
     li {
-      float: left;
+      float: right;
+      list-style-type: none;
     }
     
     li a {
-      display: block;
-      color: rgb(20, 20, 32);
-      text-align: center;
-      padding: 14px 16px;
       text-decoration: none;
+      color: black;
     }
     
     li a:hover {
       color:red;
     }
-    #logo {
-      float: left;
-      padding-right: 200px;
-      margin-left: 25px;
-      transform: scale(0.5);
+    .logo {
+      width:70px;
     }
-   
-   
-    #nav-button{
-      float: right;
-      margin-right: 90px;
-      background-color: #f44336;
-      color: white !important;
-      padding: 0;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      border-radius: 5px;
+    .nav-button{
+       background-color: #f44336;
+       color: white !important;
+       border-style: none;
+       padding: 15px 30px;
+       border-radius: 5px;
+      justify-content: flex-end;
     }
     
     .social-icons{
-        float: left;
-        display: inline;
-        text-align: left;
-        padding: 5px;
+         margin-top: 8%;
+            flex: .2;
         
       }
       .social-icons a{
-        color: rgb(22, 22, 75);
-        text-decoration: none;
-        padding: 10px;
-        font-size: 30px;
-        margin-top: 20px;
+       display: block;
+       padding-top: 20px;
+       padding-right: 0%;
+
       }
     .hero{
-      display: flex; 
-      align-items: center;
-      justify-content: space-between;
-      float: left;
-    
+      display: flex;
    }
    .hero-section{
       width: 50%;
@@ -82,40 +66,16 @@
       padding-left:  70px;
       padding-bottom: 50px;
      
-   }
-   .header{
-    font-size:32px ;
-    line-height: 1;
-    padding-bottom: 60px;
-   }
-   .text{
-    font-size: larger;
-    line-height: 1.5;
-    padding-bottom: 60px;
-    margin-bottom: 30px;
-   }
-   .hero-image{
-    width: 400px;
-    height: auto;
-    display: flex;
-    align-items: center;
-   text-align: center;
-   padding-right: 60px;
-   }
-   .hero-image img{
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-   }
+   } 
+   
+   
    .button{
-      background-color: #f15a29;
+      border-style: none;
+      padding: 15px 30px;
+      margin-top: 20px;
+      background-color: #f44336;
       color: white;
-      padding: 9px;
-      text-decoration: none;
       border-radius: 5px;
-      font-weight: bold;
-      width: 100px;
-      line-height: 2;
   }
   
   .about-section{
@@ -310,7 +270,7 @@
   }
   .client{
     border-radius: 8px;
-    background-color: #f15a29;
+    background-color:orangered;
     margin-right: 10px;
     height: 250px;
     width: 50%;
@@ -326,7 +286,66 @@
   }
   .client .subtitle{
     font-size: 20px;
-    color: white;
+    color: orangered;
     margin-top: 0px;
     text-align: center;
   }
+  .stay-in-touch{
+    padding-bottom: 60px;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .subtitle{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .subscribtion-form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .subscribtion-form button{
+    padding: 20px 30px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .subscribtion-form input[type="email"]{
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+  }
+  footer{
+    display:inline; 
+    padding: 70px;
+    background-color:rgb(3, 3, 45);
+    justify-content: space-around;
+    display: block;
+    color: white;
+
+  }
+  footer a i{
+    color: white;
+    padding: 10px;
+  }
+ .footer-img{
+     display: inline;
+      justify-content:space-between ;
+      padding: 70px;
+      border-radius: 60px;
+      margin-left: 100px;
+      
+ }
+ .footer-email{
+  float: right;
+  font-size: xx-large;
+ 
+ }
+ .footer-line{
+  width: 1000px;
+ }
+  .section{
+    padding: 0px 100px;
+  }
+    
+   

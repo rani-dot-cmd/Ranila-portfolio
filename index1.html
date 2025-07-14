@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+      <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fbf3f2;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .section{
+         padding: 0px 100px;  
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        li{
+            list-style-type: none;
+            float: right ;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        li a:hover{
+            color: #f44336;
+        }
+        li a.active{
+            color: #f44336;
+        }
+        .logo{
+            width:70px;
+        }
+        .nav-button{     
+            background-color: #f44336;
+            color: white !important;
+            border-style: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            justify-content: flex-end;
+        }
+        /* hero section starts */
+        .hero{
+            display: flex;
+        }
+        .social-icons{
+            margin-top: 8%;
+            flex: .2;
+        }
+        .social-icons a{
+            display: block;
+            padding-top: 20px;
+            padding-right: 0%;
+        }
+        .fa-brands {
+            font-size: 25px;
+        }
+        .content{
+            padding: 40px 0px ;
+            flex: 1.8;
+        }
+        .content h1{
+            font-size: 80px;
+        }
+        .content p{
+            font-size: 20px;
+            font-weight: 1;
+        }
+        .button{
+            border-style: none;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #f44336;
+            color: white;
+            border-radius: 5px;
+        }
+        /* the about section starts */ */
+         .about{
+            text-align:center;
+            font-size: larger;
+            
+        }
+        .about h3{
+            font-size: 30px;
+        }
+        .about p{
+            font-size: medium;
+            padding: 30px 0px;
+        }
+        .about-content{
+            padding: 65px 40px;
+            display: flex;
+            gap: 30px;
+        }
+        .about-image{
+            width: 300px;
+            border-radius: 8px;
+            background-color: #f15a29;
+            background-size: 80%;
+            background-position: right;
+        }
+        .about-image span img{
+            padding: 20px 10px;
+            width: 250px;
+            border-radius: 12%;
+            margin-left: -20px;
+        } 
+        .line{
+            width: 90px;
+            margin: auto;
+            border: 1px solid #f15a29;
+        }
+        .center{
+            padding-top: 16%;
+        }
+        /* service section starts here */
+        .myservices h3{
+             font-size: 30px;
+             padding: 30px 0px;
+             
+        }
+        .myservices p{
+            font-size: medium;
+            padding: 20px 10px;
+           
+            
+        }
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            margin: auto;
+            grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+            max-width: 1200px;
+             justify-content: space-between;
+            
+        }
+        .grid-container h3{
+            text-align: center;
+            padding: 10px;
+        }
+        .service{
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            /* height: 200px; */
+        }
+        .icon{
+            width: 50px;
+            margin-bottom: 5px;
+        }
+        /* working process */
+        .working-process{
+            text-align: center;
+        }
+        .process-image{
+             height: 60vh;
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+             align-items: center;
+             justify-content: center;
+             color: black;
+             margin-top: 150px;
+             margin-bottom: 150px;
+             display: flex;
+             background-image: url('e68e84e6e82961a823ca4bd79702c1ac.jpg');
+        }
+        /* Work Experience */
+        .work-experience{
+            text-align:center;
+            font-size: larger;
+        }
+        .work-experience h3{
+             font-size: 30px;
+        }
+        .work-experience p{
+            font-size: medium;
+            padding: 30px 0px;
+        }
+        .year{
+            color: #f15a29;
+        }
+        .grid-work{
+            display: grid;
+            gap: 10px;
+            margin: auto;
+            grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
+            max-width: 1200px;
+            justify-content: space-between;
+            padding: 30px 10px;
+        }
+        .lines{
+            background-color: #f15a29;
+            height: 20px;
+            border-radius: 20px;
+            width: 250px;
+        }
+        .lines h5{
+            text-align: left;
+            color: white;
+            padding: 3px 10px;
+        }
+        .year-services{
+            display: grid;
+            gap: 10px;
+            margin: auto;
+            grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+            max-width: 1200px;
+            justify-content: space-between;
+        }
+        /* my portfolio starts here */
+        .my-portfolio{
+            text-align:center;
+            font-size: larger;
+            background-color: white;
+        }
+        .my-portfolio h3{
+             font-size: 30px;
+        }
+        .my-portfolio p{
+            font-size: medium;
+            padding: 40px 0px;
+           
+        }
+        /* what clients say starts here */
+        .my-clients-say{
+            font-size: 30px;
+            padding: 30px 0px;
+            background-color:rgb(245, 228, 228);
+             
+        }
+        .my-clients-say h3{
+            font-size: 30px;
+        }
+        .my-clients-say p{
+            font-size: medium;
+            padding: 30px 0px;
+        }
+        .client-container{
+            display: grid;
+            gap: 10px;
+            margin: auto;
+            grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+            max-width: 1200px;
+            justify-content: space-between;
+        }
+        .client{
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .image{
+            width: 50px;
+            margin-bottom: 5px;
+            border-radius: 30px;
+        }
+        .liness{
+            width: 30px;
+            margin: auto;
+            border: 1px solid #f15a29;
+        }
+        /* stay in touch starts here */
+        .stay-in-touch{
+            font-size: 30px;
+            padding: 30px 0px;
+            background-color:white;
+        }
+        .stay-in-touch h3{
+            font-size: 30px;
+            color: rgb(6, 6, 97);
+            
+        }
+        .stay-in-touch p{
+            font-size: medium;
+            padding: 30px 0px;
+        }
+        .subscribtion-form{
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+       }
+       .subscribtion-form button{
+        padding: 10px 20px;
+        background-color:#f15a29;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        }
+        .subscribtion-form button:hover{
+            color: black;
+            background-color: #ccc;
+        }
+        .subscribtion-form button:active {
+            color: #f15a29;
+        }
+       .subscribtion-form input[type="email"]{
+        padding: 15px;
+        width: 350px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+       }
+       /* footer starts here */
+       footer{
+        display:inline; 
+        padding: 70px;
+        background-color:rgb(3, 3, 45);
+        justify-content: space-around;
+        display: block;
+        color: white;
+
+        }
+        footer a i{
+        color: white;
+        padding: 10px;
+        padding-top: 30px;
+        }
+        .footer-img{
+        display: inline;
+        justify-content:space-between ;
+        padding: 60px;
+        border-radius: 60px;
+        margin-left: 90px;
+        width: 70px;
+            
+        }
+        .footer-email{
+        float: right;
+        font-size: large;
+        
+        }
+        .footer-line{
+        width: 1000px;
+        }
+        .section p{
+            text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <header class="nav section">
+        <div>
+            <img src="../Ranila-portfolio/logo-1-150x150.png" alt="" class="logo" >
+        
+        </div>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li> 
+      </ul>
+      <a href=""><button class="nav-button">Hire me</button></a>
+    </header>
+    <section class="hero section">
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-solid fa-basketball"></i></a>
+            <a href=""><i class="fa-brands fa-behance"></i></a>
+        </div>
+        <div class="content section">
+            <h1>
+            I'm a Web <br /><span>Developer</span><br />
+            Ranila Liisone
+          </h1>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Non quo,
+            explicabo libero...
+          </p>
+          
+            <div>
+            <a href="about" ><button class="button">Learn more</button></a>
+            </div>
+
+        </div>
+        <div class="hero-image">
+            <img src="rani.png" height="400px" alt="Hero Image" />  
+        </div>
+
+    </section>
+    <br>
+    <section class="about section">
+        <h3 style="text-align: center;">About Me</h3>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+        <div class="line"></div>
+
+        <div class="about-content">
+            <div>
+                <h3>Developing With a Passion While Exploring the World</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus rerum laborum eaque accusamus temporibus quos soluta. Molestiae cupiditate a tempora, fugit expedita reiciendis adipisci delectus fugiat unde illo iure ut.</p>
+                <a href="about" ><button class="button">Contact Me</button></a>
+            </div>
+            <div class="center">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non suscipit provident ratione? Autem dolorum ad exercitationem. Debitis magnam numquam soluta assumenda suscipit saepe, maiores nemo, tenetur dolor blanditiis repudiandae. Vel.</p>
+            </div>
+            <div class="about-image">
+               <span><img src="../Ranila-portfolio/section-1-bg1.jpg" alt="About Image"></span> 
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class=" myservices section">
+        <h3 style="text-align: center;">What Services I'm providing</h3>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+        <div class="line"></div>
+        <br>
+        <br>
+        <div class="grid-container">
+            <div class="service">
+                <img class="icon" src="../Ranila-portfolio/ux.png" alt="UI/UX Icon">
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae pariatur ullam. Tenetur id illo deserunt voluptatibus debitis optio architecto provident inventore alias sunt corrupti dolorum neque, doloribus vero voluptatem?</p>
+                 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+            </div>
+
+            <div class="service section">
+                <img class="icon" src="../Ranila-portfolio/digital.png" alt="marketing Icon">
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae nostrum fuga aliquid. Consectetur nemo voluptas repellendus culpa vel molestias fuga quae in explicabo dolore id vitae, totam quia. Quasi.</p>
+                 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+            </div>
+
+            <div class="service ">
+                <img class="icon" src="../Ranila-portfolio/web.png" alt="web development Icon">
+                <h3> Web Development</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, alias. Quia distinctio pariatur laudantium eaque labore eos impedit architecto veniam, molestias asperiores, quas ipsum ad tenetur nam ex alias inventore.</p>
+                 <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="working-process section">
+        <div class="process-image">
+           <div><h3 style="text-align: center;">Working Process</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ab, magni suscipit in deleniti laboriosam soluta voluptatum corporis nobis nulla eaque perspiciatis culpa est provident consectetur omnis. Sequi, doloribus expedita.</p></div>
+        </div>
+    </section>
+    <br>
+    <section class="work-experience section">
+         <h3 style="text-align: center;">Work Experience</h3>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+        <div class="line"></div>
+        <br>
+        <br>
+        <div class="grid-work section">
+            <div class="service section">
+                    <h3>UX/UI Dessigner</h3>
+                    <div class="year">2015/2018</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae nostrum fuga aliquid. Consectetur nemo voluptas repellendus culpa vel molestias fuga quae in explicabo dolore id vitae, totam quia. Quasi.</p>
+                    <div class="lines"><h5>UI/UX Design</h5></div>
+                </div>
+
+                <div class="service section">
+                    <h3>Web Designer</h3>
+                    <div class="year">2015/2018</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae nostrum fuga aliquid. Consectetur nemo voluptas repellendus culpa vel molestias fuga quae in explicabo dolore id vitae, totam quia. Quasi.</p>
+                    <div class="lines"><h5>Web Designer</h5></div>
+                </div>
+            </div>
+            <br>
+            <div class="year-services">
+                <div class="service section">
+                    <h3>Web Developer</h3>
+                    <div class="year">2015/2018</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae nostrum fuga aliquid. Consectetur nemo voluptas repellendus culpa vel molestias fuga quae in explicabo dolore id vitae, totam quia. Quasi.</p>
+                    <div class="lines"><h5>Web Developer</h5></div>
+                </div>
+                <div class="service section">
+                    <h3>Graphic Designer</h3>
+                    <div class="year">2015/2018</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae nostrum fuga aliquid. Consectetur nemo voluptas repellendus culpa vel molestias fuga quae in explicabo dolore id vitae, totam quia. Quasi.</p>
+                    <div class="lines"><h5>Graphic Designer</h5></div>
+                </div>
+                <div class="service section">
+                    <h3> Marketing</h3>
+                    <div class="year">2015/2018</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae nostrum fuga aliquid. Consectetur nemo voluptas repellendus culpa vel molestias fuga quae in explicabo dolore id vitae, totam quia. Quasi.</p>
+                    <div class="lines"><h5>Market</h5></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="my-portfolio section" style="padding: 60px;">
+            <h3 style="text-align: center;">My Portfolio</h3>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+            <div class="line"></div>
+                <div class="portfolio-image">
+                    <img style="border-radius: 15px; gap: 5px;"  src="../Ranila-portfolio/portfolio-3.png" width="300px" height="250px"alt="portfolio Item 1">
+                    <img style="border-radius: 15px; gap: 5px;" src="../Ranila-portfolio/portfolio-4.png" width="300px" height="250px" alt="Portfolio Item 2">
+                    <img style="border-radius: 15px; gap: 5px;" src="../Ranila-portfolio/portfolio-6-1.png" width="300px" height="250px" alt="Portfolio Item 3">
+            </div>
+    </section>
+    <br>
+    <section class="my-clients-say section">
+         <h3 style="text-align: center;">What My Clients Say</h3>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+        <div class="liness"></div>
+        <br>
+        <div>
+            <div class="client-container section">
+            <div class="client section">
+                <!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
+                <img class="image" src="../Ranila-portfolio/male-1.jpg" alt="male image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quae pariatur ullam. Tenetur id illo deserunt voluptatibus debitis optio architecto provident inventore alias sunt corrupti dolorum neque, doloribus vero voluptatem?</p>
+                <div class="liness"></div>
+                <p>John Doe</p>
+            </div>
+
+            <div class="client section">
+                <!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
+                <img class="image" src="../Ranila-portfolio/female-3-300x300.jpg" alt="female image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae nostrum fuga aliquid. Consectetur nemo voluptas repellendus culpa vel molestias fuga quae in explicabo dolore id vitae, totam quia. Quasi.</p>
+                <div class="liness"></div>
+                <p>Jenna Smith</p>
+            </div>
+
+            <div class="client section">
+                <!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
+                <img class="image" src="../Ranila-portfolio/male-3.jpg" alt="male3 image">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, alias.Quia distinctio pariatur laudantium eaque labore eos impedit architecto veniam, molestias asperiores, quas ipsum ad tenetur nam ex alias inventore.</p>
+                 <div class="liness"></div>
+                <p>Samuel Stevens</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="stay-in-touch section">
+         <h3 style="text-align: center;">What My Clients Say</h3>
+        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </p>
+        <div class="liness"></div>
+        <br>
+        <form class="subscribtion-form">
+            <input type="email" placeholder="Enter email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+    </section>
+    <br>
+     <footer class="Section">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-solid fa-basketball"></i></a>
+        <a href="#"><i class="fa-brands fa-behance"></i></a>
+        <div class="footer-img"><img src="../Ranila-portfolio/logo-1-150x150.png" alt=""></div>
+        <div class="footer-email section">mail@example.com</div>
+        <div class="footer-lines">
+        <div style="width: 1000px;" class="line"></div>
+        <p>Copyright © 2025 Personal Portfolio</p>
+        </div>
+      </footer>
+</body>
+</html>

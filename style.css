@@ -52,11 +52,20 @@
       border-radius: 5px;
     }
     
-    /* .social-icons{
+    .social-icons{
         float: left;
         display: inline;
         text-align: left;
-      } */
+        padding: 5px;
+        
+      }
+      .social-icons a{
+        color: rgb(22, 22, 75);
+        text-decoration: none;
+        padding: 10px;
+        font-size: 30px;
+        margin-top: 20px;
+      }
     .hero{
       display: flex; 
       align-items: center;
@@ -129,7 +138,7 @@
   .underline{
     width: 50px;
     height: 2px;
-    background-color: #f15a29;
+    background-color: white;
     margin: 20px auto;
   }
   .about-text{
@@ -286,4 +295,38 @@
     text-align: center;
     border-radius: 15px;
     margin-bottom: 20px;
+  }
+  .clients{
+    background-color: white;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: larger;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+  }
+  .client{
+    border-radius: 8px;
+    background-color: #f15a29;
+    margin-right: 10px;
+    height: 250px;
+    width: 50%;
+    max-width: 100%;
+
+  }
+  .client img{
+    object-fit: cover;
+    border-radius: 8px;
+    width: 20%;
+    height: auto;
+    margin-top: 5px;
+  }
+  .client .subtitle{
+    font-size: 20px;
+    color: white;
+    margin-top: 0px;
+    text-align: center;
   }

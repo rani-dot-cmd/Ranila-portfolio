@@ -56,16 +56,20 @@
             justify-content: flex-end;
         }
         /* about me starts here */
+        .fff{
+            display: flex;
+        }
         .about{
             text-align:center;
             font-size: larger;
             
         }
         .about h3{
-            font-size: 30px;
+            font-size: 32px;
+            
         }
         .about p{
-            font-size: medium;
+            font-size: 30px;
             padding: 30px 0px;
         }
         .about-content{
@@ -75,10 +79,13 @@
         }
         .about-image{
             width: 300px;
+            /* max-width: 300px; */
             border-radius: 8px;
             background-color: #f15a29;
-            background-size: 80%;
+            background-size: 60%;
             background-position: right;
+            height: 400px;
+            
         }
         .about-image span img{
             padding: 20px 10px;
@@ -94,6 +101,21 @@
         .center{
             padding-top: 16%;
         }
+        /*  */
+
+        .lines{
+            background-color: #f15a29;
+            height: 20px;
+            border-radius: 20px;
+            width: 300px;
+            gap: 15px;
+            padding-top: 16px;
+        }
+        .lines h5{
+            text-align: left;
+            color:black;
+        }
+       
     </style>
 </head>
 <body>
@@ -112,22 +134,66 @@
       <br>
     </header>
     <br>
-     <section class="about section">
-        <h3 style="text-align: center;">About Me</h3>
-        <div class="line"></div>
+        <section class="about section">
+            <h3 style="text-align: center;">About Me</h3>
+            <div class="line"></div>
+        </section> 
 
-           <div class="about-image">
-               <span><img src="me.jpg" alt="About Image"></span> 
+        <br>  
+        <section class="fff section">
+            <div class="about-image section">
+                <span><img src="me.jpg" alt="About Image"></span> 
+            </div> 
+         <div class="about-content section">
+                <div>
+                    <h2>Developing With a Passion While Exploring the World</h2>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus rerum laborum eaque accusamus temporibus quos soluta. Molestiae cupiditate a tempora, fugit expedita reiciendis adipisci delectus fugiat unde illo iure ut.</p>
+                    <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quisquam officia unde placeat voluptatibus earum. Iste consectetur quae ipsum facilis cum, doloribus saepe nulla, et quisquam officiis asperiores rem ex.</p>
+                    <br>
+                    <br>
+                    <p class="contact" >Let's talk with me</p>
+                    <br>
+                    <p class="email">Contct@domain.com</p>
+                </div>
+                <div class="center section">
+                    <h2>Developing With a Passion While Exploring the World</h2>
+                    <div class="line"></div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non suscipit provident ratione? Autem dolorum ad exercitationem. Debitis magnam numquam soluta assumenda suscipit saepe, maiores nemo, tenetur dolor blanditiis repudiandae. Vel.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi animi magnam debitis hic temporibus vero corrupti quae, voluptatem quia totam itaque recusandae ea at quibusdam autem, iure qui molestiae. Ad?</p>
+                    <br>
+                  <div class="social-icons section">
+                      <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      <a href=""><i class="fa-solid fa-basketball"></i></a>
+                      <a href=""><i class="fa-brands fa-behance"></i></a>
+                  </div>
+                </div> 
             </div>
-        <div class="about-content">
+        </section>
+        <br>
+        <section class="content container section">
             <div>
-                <h3>Developing With a Passion While Exploring the World</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus rerum laborum eaque accusamus temporibus quos soluta. Molestiae cupiditate a tempora, fugit expedita reiciendis adipisci delectus fugiat unde illo iure ut.</p>
+                <h3>Frontend And Backend Developers</h3>
             </div>
-            <div class="center">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non suscipit provident ratione? Autem dolorum ad exercitationem. Debitis magnam numquam soluta assumenda suscipit saepe, maiores nemo, tenetur dolor blanditiis repudiandae. Vel.</p>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam perspiciatis animi reiciendis et natus enim maiores temporibus iste molestiae. In quas accusamus perferendis repellat qui repellendus voluptatem, laudantium voluptatibus saepe!</p>
+            <div>
+                <a href="about" ><button class="button">Download CV</button></a>
             </div>
-        </div>
-    </section>
+            <div >
+                 <div class="lines"><h5>UI/UX Design</h5></div>
+                 <br>
+                 <div class="lines"><h5>UI/UX Design</h5></div>
+                 <br>
+                 <div class="lines"><h5>UI/UX Design</h5></div>
+                 <br>
+                 <div class="lines"><h5>UI/UX Design</h5></div>
+                 <br>
+                 <div class="lines"><h5>UI/UX Design</h5></div>
+            </div>
+        </section>
 </body>
 </html>

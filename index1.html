@@ -59,6 +59,9 @@
             border-radius: 5px;
             justify-content: flex-end;
         }
+        .nav-button:hover{
+            background-color: #e74c3c;
+        }
         /* hero section starts */
         .hero{
             display: flex;
@@ -93,6 +96,9 @@
             background-color: #f44336;
             color: white;
             border-radius: 5px;
+        }
+        .button:hover{
+            background-color: #e74c3c;
         }
         /* the about section starts */ */
          .about{
@@ -336,6 +342,9 @@
         padding: 10px;
         padding-top: 30px;
         }
+        .footer a i:hover{
+            color: #f15a29;
+        }
         .footer-img{
         display: inline;
         justify-content:space-between ;
@@ -349,11 +358,16 @@
         float: right;
         font-size: large;
         }
-        .footer-line{
-        width: 1000px;
-        }
-        .section p{
+       .hr-line{
+        width: 900px;
+        background-color: #f15a29;
+        margin: 30px auto;
+        height: 2px;
+}
+        .email{
             text-align: center;
+             font-size: 14px;
+            color: white;
         }
       </style>
 </head>
@@ -364,10 +378,10 @@
         
         </div>
       <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li> 
+        <li><a class="active" href="index1.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li> 
       </ul>
       <a href=""><button class="nav-button">Hire me</button></a>
     </header>
@@ -551,7 +565,7 @@
     <br>
     <br>
     <section class="stay-in-touch section">
-         <h3 style="text-align: center;">What My Clients Say</h3>
+         <h3 style="text-align: center;">Stay in Touch</h3>
         <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit
         </p>
         <div class="liness"></div>
@@ -562,17 +576,16 @@
           </form>
     </section>
     <br>
-     <footer class="Section">
+     <footer class="footer">
         <a href=""><i class="fa-brands fa-facebook"></i></a>
         <a href="#"><i class="fa-brands fa-twitter"></i></a>
         <a href="#"><i class="fa-brands fa-instagram"></i></a>
         <a href="#"><i class="fa-solid fa-basketball"></i></a>
         <a href="#"><i class="fa-brands fa-behance"></i></a>
         <div class="footer-img"><img src="../Ranila-portfolio/logo-1-150x150.png" alt=""></div>
-        <div class="footer-email section">mail@example.com</div>
-        <div class="footer-lines">
-        <div style="width: 1000px;" class="line"></div>
-        <p>Copyright © 2025 Personal Portfolio</p>
+        <div class="footer-email ">mail@example.com</div>
+        <div class="hr-line"></div>
+        <p class="email">Copyright © 2025 Personal Portfolio</p>
         </div>
       </footer>
 </body>

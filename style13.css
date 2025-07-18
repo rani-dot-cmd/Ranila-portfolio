@@ -1,0 +1,184 @@
+*{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fbf3f2;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .section{
+         padding: 0px 100px;  
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        li{
+            list-style-type: none;
+            float: right ;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        li a:hover{
+            color: #f44336;
+        }
+        li a.active{
+            color: #f44336;
+        }
+        .logo{
+            width:70px;
+        }
+        .nav-button{     
+            background-color: #f44336;
+            color: white !important;
+            border-style: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            justify-content: flex-end;
+        }
+        .nav-button:hover{
+            background-color: #e74c3c;
+        }
+        /* contact starts here */
+        .contact{
+            text-align: center;
+            padding: 40px;
+        }
+        .contact-me h1{
+            font-size: 32px;
+            color: rgb(12, 12, 124);
+        }
+        .hr-line{
+            width: 50px;
+            background-color: #f15a29;
+            margin: 30px auto;
+            height: 2px;
+        }
+        .contact-container{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            text-align: center;
+        }
+        .contact-card{
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0,0,0,0,1);
+        }
+        .icon{
+            font-size: 30px;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        .main-text{
+            font-weight: bold;
+            font-size: 16px;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        .sub-text{
+            font-size: 14px;
+            color: #777;
+        }
+         .contact-section{
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 20px;
+            text-align: left;
+         }
+         .contact-section h2{
+            font-size: 28px;
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            display: inline-block;
+            padding-bottom: 6px;
+         }
+         .contact-form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+         }
+         .contact-form input,
+         .contact-form textarea{
+            margin-bottom: 15px;
+            padding: 16px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+         }
+         .contact-form .char-limit{
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 15px;
+         }
+         .contact-form button{
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+         }
+         .contact-form button:hover{
+            background-color: #c0392b;
+         }
+
+         /* footer starts here */
+         footer{
+            display:inline; 
+            padding: 70px;
+            background-color:rgb(3, 3, 45);
+            justify-content: space-around;
+            display: block;
+            color: white;
+            padding-bottom: 70px;
+
+        }
+        footer a i{
+            color: white;
+            padding: 10px;
+            padding-top: 30px;
+        }
+        footer a i:hover{
+            color: #f15a29;
+        }
+        .footer-img{
+            display: inline;
+            justify-content:space-between ;
+            padding: 60px;
+            border-radius: 60px;
+            margin-left: 90px;
+            width: 70px;
+                    
+        }
+        .footer-email{
+            float: right;
+            font-size: large;
+        }
+        .hr-lines{
+            width: 900px;
+            background-color: #f15a29;
+            margin: 30px auto;
+            height: 2px;
+        }
+        .email{
+            /* justify-content: center; */
+            text-align: center;
+            font-size: 14px;
+            color: white;
+        }
+
+
+

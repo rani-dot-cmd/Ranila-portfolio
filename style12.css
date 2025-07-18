@@ -1,0 +1,116 @@
+ *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fbf3f2;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .section{
+         padding: 0px 100px;  
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        li{
+            list-style-type: none;
+            float: right ;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        li a:hover{
+            color: #f44336;
+        }
+        li a.active{
+            color: #f44336;
+        }
+        .logo{
+            width:70px;
+        }
+        .nav-button{     
+            background-color: #f44336;
+            color: white !important;
+            border-style: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            justify-content: flex-end;
+        }
+        .nav-button:hover{
+            background-color: #e74c3c;
+        }
+        /* my portfolio starts here */
+        .my-portfolio{
+            text-align:center;
+            font-size: larger;
+            /* background-color: white; */
+        }
+        .hr-line{
+            width: 50px;
+            background-color: #f15a29;
+            margin: 30px auto;
+            height: 2px;
+        }
+        .my-portfolio h3{
+             font-size: 30px;
+        }
+        .portfolio-conent h2{
+           
+        }
+        .my-portfolio p{
+            font-size: medium;
+            padding-top: 40px;
+        }
+        /* footer starts here */
+         footer{
+            display:inline; 
+            padding: 70px;
+            background-color:rgb(3, 3, 45);
+            justify-content: space-around;
+            display: block;
+            color: white;
+            padding-bottom: 70px;
+
+        }
+        footer a i{
+            color: white;
+            padding: 10px;
+            padding-top: 30px;
+        }
+        footer a i:hover{
+            color: #f15a29;
+        }
+        .footer-img{
+            display: inline;
+            justify-content:space-between ;
+            padding: 60px;
+            border-radius: 60px;
+            margin-left: 90px;
+            width: 70px;
+                    
+        }
+        .footer-email{
+            float: right;
+            font-size: large;
+        }
+        .hr-lines{
+            width: 900px;
+            background-color: #f15a29;
+            margin: 30px auto;
+            height: 2px;
+        }
+        .email{
+            /* justify-content: center; */
+            text-align: center;
+            font-size: 14px;
+            color: white;
+        }

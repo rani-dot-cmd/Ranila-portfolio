@@ -359,8 +359,33 @@
             font-size: 14px;
         }
 
-
-
+/* responsiveness   */
+        @media (max-width: 768px) {
+            .section {
+                padding: 0 20px;
+            }
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-card1, .about-card2 {
+                width: 100%;
+            }
+            .testimonial-card, .testimonial-card1 {
+                width: 100%;
+            }
+            .progress-bar {
+                width: 100%;
+            }
+            footer {
+                padding: 20px;
+                text-align: center;
+            }
+        }
 
 
 

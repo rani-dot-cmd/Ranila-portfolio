@@ -103,66 +103,53 @@
             font-size: large;
         }
         .hr-lines{
-            width: 900px;
+            width: 100%;
             background-color: #f15a29;
             margin: 30px auto;
             height: 2px;
         }
         .email{
-
-            /* responsize on a pixel 7 screen */
-            text-align: center;
-            font-size: 14px;
-            color: white;
-        }
-        .section{
-            padding: 0px 20px;
-        }
-        ul{
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-        }
-        .logo{
             /* justify-content: center; */
             text-align: center;
             font-size: 14px;
             color: white;
         }
-        
 
-        @media (max-width: 768px) {
+        .portfolio-image img{
+            border-radius: 15px;
+            gap: 5px;
+        }
+        /* this page should be responsive on pixel 7 */
+        @media screen and (max-width: 600px) {
             .section{
                 padding: 0px 20px;
             }
-            ul{
-                flex-direction: column;
-                gap: 20px;
+            .portfolio-image img{
+                width: 100%;
+                height: auto;
             }
-            .logo{
-                width: 50px;
-            }
-            .nav-button{
-                padding: 10px 20px;
-            }
-            footer{
-                padding: 40px;
-            }
-            .footer-img{
-                margin-left: 0;
-                width: 50px;
-            }
-            
-        }
-        @media (max-width: 480px) {
             .nav-button{
                 width: 100%;
-                padding: 10px;
-            }
-            .footer-email{
-                font-size: medium;
+                text-align: center;
             }
             footer{
-                text-align: center;
+                padding: 20px;
+            }
+        }
+        @media (max-width: 768px) {
+            .section {
+                padding: 0 20px;
+            }
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-card {
+                width: 100%;
+                max-width: 300px;
             }
         }

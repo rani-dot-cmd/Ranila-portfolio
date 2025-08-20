@@ -13,7 +13,7 @@
             padding: 10px 20px;
         }
         .section{
-            padding: 0px 100px;
+         padding: 0px 100px;  
         }
         ul{
             display: flex;
@@ -156,11 +156,11 @@
         }
         .footer-img{
             display: inline;
-             justify-content:space-between ;
+            justify-content:space-between ;
             padding: 60px;
             border-radius: 60px;
             margin-left: 90px;
-            width: 60px;
+            width: 70px;
                     
         }
         .footer-email{
@@ -174,12 +174,12 @@
             height: 2px;
         }
         .email{
-            justify-content: center; 
+            /* justify-content: center; */
             text-align: center;
             font-size: 14px;
             color: white;
         }
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
             .section {
                 padding: 0 20px;
             }
@@ -195,67 +195,42 @@
                 width: 100%;
                 max-width: 300px;
             }
-        } 
+        }
         @media (max-width: 480px) {
             .nav-button {
-                width: 70px;
+                width: 100%;
                 padding: 10px;
-                margin-left: 10px;
-            }
-            .logo{
-                width: 70px;
-                margin-right: 10px;
             }
             .contact-card {
                 width: 100%;
                 max-width: 90%;
             }
             .contact-section {
-                padding: 0px;
-                width: 300px;
-                height: auto;
-                text-align: center;
+                padding: 10px;
             }
             footer {
                 text-align: center;
-                width: 100px;
-                margin-left: 0;
-                height: 400px;
-            }
-            .hr-lines{
-                width: 100%;
             }
             .footer-img {
                 margin-left: 0;
-                /* display: block;
-                margin: 0 auto; */
-                width: 600px;
-                height: auto;
-            }
-            a{
-               margin-top: 1opx; 
+                display: block;
+                margin: 0 auto;
             }
         }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
             .section {
                 padding: 0 40px;
-                margin-left: 0;
-                width: 60px;
             }
             ul {
-                gap: 10px;
+                gap: 20px;
             }
             .contact-container {
                 flex-direction: column;
                 align-items: center;
-                width: 100%;
             }
             .contact-card {
                 width: 100%;
                 max-width: 350px;
-            }
-            .contact-form{
-                width: 100%;
             }
         }
 /* @media (max-width: 1200px) {
@@ -274,3 +249,56 @@
                 max-width: 400px;
             }
         } */
+         @media (max-width: 768px) {
+    /*Example change*/
+    footer {
+        padding: 15px 0;  /* Less padding on smaller screens */
+    }
+    .footer-img {
+        width: 40px;   /* Smaller logos on small screens */
+        height: 40px;
+    }
+
+    /*If you have several images inline and want to arrange them in rows*/
+    /*Comment this out if you DON'T want the footer-images to display in rows. */
+    .footer-img{
+        display: block;  /* Stack logo-images into rows */
+        margin: 5px auto; /* Centers them with spacing */
+        width: 40px;   /* Smaller logos on small screens */
+        height: 40px;
+    }
+
+    .hr-lines {
+       width: 90%;  /*Responsive horizontal width*/
+    }
+    .footer-email{
+      float:none;        /*Disable float in this case*/
+      display: block;     /*Make the Email occupy a single row */
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+
+    .footer-img {
+        width: 30px;
+        height: 30px;
+    }
+    .hr-lines {
+         width: 100%; /*Responsive horizontal width*/
+    }
+  /*Disable inline behavior and stack*/
+  footer{
+     text-align:center;          /*Center align text */
+  }
+
+  .footer-img{
+       display:block;              /*Displays items in row*/
+       margin:10px auto;     /*Automatic central margin */
+   }
+  .footer-email{
+        float:none;            /*Email will disable float if needed*/
+         display: block;    /*Display the element on separate rows */
+   }
+
+}

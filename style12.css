@@ -109,8 +109,60 @@
             height: 2px;
         }
         .email{
+
+            /* responsize on a pixel 7 screen */
+            text-align: center;
+            font-size: 14px;
+            color: white;
+        }
+        .section{
+            padding: 0px 20px;
+        }
+        ul{
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .logo{
             /* justify-content: center; */
             text-align: center;
             font-size: 14px;
             color: white;
+        }
+        
+
+        @media (max-width: 768px) {
+            .section{
+                padding: 0px 20px;
+            }
+            ul{
+                flex-direction: column;
+                gap: 20px;
+            }
+            .logo{
+                width: 50px;
+            }
+            .nav-button{
+                padding: 10px 20px;
+            }
+            footer{
+                padding: 40px;
+            }
+            .footer-img{
+                margin-left: 0;
+                width: 50px;
+            }
+            
+        }
+        @media (max-width: 480px) {
+            .nav-button{
+                width: 100%;
+                padding: 10px;
+            }
+            .footer-email{
+                font-size: medium;
+            }
+            footer{
+                text-align: center;
+            }
         }

@@ -386,6 +386,34 @@
                 text-align: center;
             }
         }
+        /* responsiveness on pixel 7 screen */
+        @media (max-width: 411px) {
+            .section {
+                padding: 0 10px;
+            }
+            ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .about-card1, .about-card2 {
+                width: 100%;
+            }
+            .testimonial-card, .testimonial-card1 {
+                width: 100%;
+            }
+            .progress-bar {
+                width: 100%;
+            }
+            footer {
+                padding: 20px;
+                text-align: center;
+            }
+        }
+        
 
 
 

@@ -153,3 +153,7 @@
                 max-width: 300px;
             }
         }
+         ul {
+                flex-direction: column;
+                align-items: center;
+            }

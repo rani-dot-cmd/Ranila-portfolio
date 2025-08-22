@@ -179,6 +179,7 @@
             font-size: 14px;
             color: white;
         }
+        /* responsive */
   @media (max-width: 768px) {
             .section {
                 padding: 0 20px;
@@ -186,6 +187,9 @@
             ul {
                 flex-direction: column;
                 align-items: center;
+                padding: 0px 30px 10px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
             .contact-container {
                 flex-direction: column;
@@ -197,9 +201,9 @@
             }
         }
         @media (max-width: 480px) {
-            .nav-button {
+            .nav-button{
                 width: 100%;
-                padding: 10px;
+                text-align: center;
             }
             .contact-card {
                 width: 100%;
@@ -217,12 +221,13 @@
                 margin: 0 auto;
             }
         }
-@media (max-width: 1024px) {
+       @media (max-width: 1024px) {
             .section {
                 padding: 0 40px;
             }
-            ul {
-                gap: 20px;
+             ul {
+                flex-direction: column;
+                align-items: center;
             }
             .contact-container {
                 flex-direction: column;
@@ -233,23 +238,8 @@
                 max-width: 350px;
             }
         }
-/* @media (max-width: 1200px) {
-            .section {
-                padding: 0 60px;
-            }
-            ul {
-                gap: 30px;
-            }
-            .contact-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .contact-card {
-                width: 100%;
-                max-width: 400px;
-            }
-        } */
-         @media (max-width: 768px) {
+
+       @media (max-width: 768px) {
     /*Example change*/
     footer {
         padding: 15px 0;  /* Less padding on smaller screens */
